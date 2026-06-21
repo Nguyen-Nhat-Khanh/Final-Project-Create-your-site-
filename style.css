@@ -1,0 +1,123 @@
+/* General */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:#f4f8fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background-color:#0066cc;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Skip Link */
+.skip-link{
+    position:absolute;
+    left:20px;
+    top:-50px;
+    background:#000;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.skip-link:focus{
+    top:20px;
+}
+
+/* Navigation - Flex */
+.nav-menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    margin:0;
+    padding:15px;
+    background-color:#004080;
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* Hover Effect */
+.nav-menu a:hover{
+    background-color:#ffcc00;
+    color:#000;
+    transform:scale(1.1);
+    transition:0.4s;
+}
+
+/* Main */
+main{
+    padding:25px;
+}
+
+/* Images - Box Model */
+img{
+    width:80%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+
+    border:4px solid #0066cc;
+    padding:8px;
+    border-radius:20px;
+    box-sizing:border-box;
+
+    transition:0.4s;
+}
+
+/* Grid Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* nth-child */
+.gallery img:nth-child(even){
+    border-radius:50%;
+    border-color:#ff9900;
+}
+
+/* Hover on Images */
+img{
+    transition:0.4s;
+}
+img:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    background-color:#0066cc;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+.home-section{
+    background:#e6f2ff;
+    padding:20px;
+    border-radius:15px;
+}
+
+.attractions-page{
+    background:#eefbea;
+}
+
+.food-page{
+    background:#fff3e6;
+}
